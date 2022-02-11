@@ -42,7 +42,7 @@
 					<div class="sm:px-2 flex-row">
 						<div class="flow-root lg:text-2xl text-center lg:font-bold text-blue-800">Rt-Trend</div>
 						<div class="flow-root text-center lg:font-bold text-blue-800 lg:text-sm">(From beginning of Lockdown Phase 2)</div>
-						<LineChart height=400 type="line" chartName="Rt-map(from Lockdown Phase 2)" :dateList="rtDates" color="#0000ff" :data="getRtData" showlabels=true />
+						<LineChart height=400 type="line" chartName="Rt-map(from Lockdown Phase 2)" :dateList="rtDates" color="#0000ff" :data="getRtData" showLabels=true />
 					</div>
 				</div>
 			</div>
