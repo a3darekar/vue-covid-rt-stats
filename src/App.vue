@@ -6,6 +6,7 @@
 			<Sidebar :modalStatus.sync="faqModalVisible" class="lg:w-1/4" />
 		</div>
         <faq-modal :showModal="faqModalVisible" @closeModal="faqModalVisible = false"></faq-modal>
+        <archived-modal :showModal="archivedModalVisible" @closeModal="archivedModalVisible = false"></archived-modal>
 	</div>
 </template>
 
@@ -24,7 +25,8 @@ export default {
 	data() {
 		return {
 			faqModalVisible: false,
-			lastUpdated: null
+			lastUpdated: null,
+			archivedModalVisible: true
 		};
 	},
 	watch: {
